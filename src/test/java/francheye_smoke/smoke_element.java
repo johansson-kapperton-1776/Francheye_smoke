@@ -39,6 +39,9 @@ public class smoke_element {
 	@FindBy(xpath = "//button[normalize-space()='Sign Up']")
 	WebElement signupcreator; 
 	
+	@FindBy(xpath = "//input[@placeholder='John']")
+	WebElement name;
+	
 	// -----------------------------------------------------------------
 	
 	@FindBy(xpath = "//a[contains(@class,'mx-2 hover:outline-primary rounded-3xl px-6 py-2 outline outline-sec dark:text-gray-50')]")
@@ -68,7 +71,7 @@ public class smoke_element {
 		creator.click();
 	}
 	void enteremail()  {
-		creatoremail.sendKeys("wbanob7atv@secretmail.net");
+		creatoremail.sendKeys("w18gll8a9l@secretmail.net");
 	}
 
 	void enterpassword()  {
@@ -87,6 +90,9 @@ public class smoke_element {
 		signupcreator.click();
 	}
 		
+	void entername()  {
+		name.sendKeys("Johansson");
+	}
 		
 	}
 
